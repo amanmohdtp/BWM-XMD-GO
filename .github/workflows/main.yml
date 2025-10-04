@@ -28,10 +28,10 @@ jobs:
         check-latest: true   # Always grab the exact latest patch for this version
 
     - name: Install dependencies
-      run: npm install
+      run: nvm install
 
     - name: Build project (optional)
-      run: npm run build || echo "No build script found, skipping..."
+      run: nvm run build || echo "No build script found, skipping..."
 
     - name: Start application
-      run: npm start
+      run: nvm start
